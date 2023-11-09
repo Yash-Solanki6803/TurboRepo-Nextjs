@@ -1,4 +1,5 @@
 {
+  "name": "hcareers-turborepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -8,14 +9,28 @@
   },
   "devDependencies": {
     "eslint": "^8.48.0",
+    "eslint-config-custom": "*",
     "prettier": "^3.0.3",
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "hcareers-turborepo",
   "packageManager": "npm@9.5.1",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "autoprefixer": "^10.4.16",
+    "flowbite": "^2.0.0",
+    "flowbite-react": "^0.6.4",
+    "next": "^14.0.1",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  }
 }
