@@ -5,11 +5,14 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\""
+    "lint": "eslint \"**/*.ts*\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
     "tsconfig": "*",
-    "tailwindconfig": "*"
+    "tailwindconfig": "*",
+    "jestconfig": "*"
   }
 }

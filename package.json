@@ -5,11 +5,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "eslint": "^8.48.0",
     "eslint-config-custom": "*",
+    "jest": "^29.7.0",
     "prettier": "^3.0.3",
     "tsconfig": "*",
     "turbo": "latest"
@@ -24,13 +27,16 @@
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "autoprefixer": "^10.4.16",
+    "classnames": "^2.3.2",
     "flowbite": "^2.0.0",
     "flowbite-react": "^0.6.4",
     "next": "^14.0.1",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "zustand": "^4.4.6"
   }
 }
