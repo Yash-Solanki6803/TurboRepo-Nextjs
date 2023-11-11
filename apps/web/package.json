@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "eslint-config-custom": "*",
-    "tsconfig": "*"
+    "tsconfig": "*",
+    "jestconfig": "*"
   }
 }

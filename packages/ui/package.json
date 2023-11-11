@@ -8,8 +8,8 @@
     "lint": "eslint \"**/*.ts*\"",
     "test": "jest",
     "test:watch": "jest --watch",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.5.3",
