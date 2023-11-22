@@ -39,7 +39,7 @@ export function Button({
             type === "default",
           "text-brand-600 hover:text-brand-700": type === "link",
           "text-gray-700 hover:text-gray-800": type === "text",
-          "h-6 px-3 py-1 text-sm": size === "sm",
+          "h-6 px-3 py-1.5 text-sm": size === "sm",
           "h-8 px-4 py-2 text-md": size === "md",
           "h-12 px-6 py-3 text-lg": size === "lg",
           "text-gray-700 bg-gray-300 hover:bg-gray-400 border-gray-700   cursor-not-allowed":
