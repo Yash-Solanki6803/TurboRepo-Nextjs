@@ -16,7 +16,7 @@
   } */
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +24,35 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@layer components {
+  div.custom__dropdown > button {
+    @apply ease-in rounded-md focus:bg-none focus:outline-none focus:ring-0;
+  }
+  div.custom__dropdown-primary > button {
+    @apply text-white bg-brand-500;
+  }
+  div.custom__dropdown-primary > button:hover {
+    @apply hover:bg-brand-600;
+  }
+  div.custom__dropdown-default > button {
+    @apply text-gray-700 bg-gray-100 border border-brand-600 text-brand-600 rounded-lg;
+  }
+  div.custom__dropdown-default > button:hover {
+    @apply hover:bg-gray-200;
+  }
+
+  div.custom__dropdown-plain {
+    @apply border-b hover:border-black border-transparent ease-in-out duration-300;
+  }
+
+  div.custom__dropdown-plain > button {
+    @apply text-gray-700 bg-transparent rounded-none;
+  }
+  div.custom__dropdown-plain > button:hover {
+    @apply hover:bg-transparent;
+  }
 }
+
+
