@@ -28,7 +28,7 @@
 
 @layer components {
   div.custom__dropdown > button {
-    @apply ease-in rounded-md focus:bg-none focus:outline-none focus:ring-0;
+    @apply border-none ease-in rounded-md focus:bg-none focus:outline-none focus:ring-0;
   }
   div.custom__dropdown-primary > button {
     @apply text-white bg-brand-500;
@@ -37,7 +37,7 @@
     @apply hover:bg-brand-600;
   }
   div.custom__dropdown-default > button {
-    @apply text-gray-700 bg-gray-100 border border-brand-600 text-brand-600 rounded-lg;
+    @apply bg-gray-100 border border-brand-600 text-brand-600 rounded-lg;
   }
   div.custom__dropdown-default > button:hover {
     @apply hover:bg-gray-200;
@@ -54,5 +54,3 @@
     @apply hover:bg-transparent;
   }
 }
-
-

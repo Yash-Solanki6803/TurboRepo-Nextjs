@@ -8,7 +8,6 @@ import "ui/globals.css";
 
 //HeaderDropdownProps inheriting from Dropdown component of flowbite
 export interface HeaderDropdownProps extends DropdownProps {
-  label: string;
   mode?: "default" | "primary" | "plain";
   children: React.ReactNode;
 }
@@ -32,7 +31,6 @@ export interface HeaderDropdownComponent extends React.FC<HeaderDropdownProps> {
 }
 
 export const HeaderDropdown: HeaderDropdownComponent = ({
-  label,
   mode = "primary",
   children,
   ...restProps
@@ -45,13 +43,7 @@ export const HeaderDropdown: HeaderDropdownComponent = ({
         "custom__dropdown-plain": mode === "plain",
       })}
     >
-      <Dropdown
-        className={classNames("transition-opacity ease-in-out  duration-300")}
-        {...restProps}
-        label={label}
-      >
-        {children}
-      </Dropdown>
+      <Dropdown {...restProps}>{children}</Dropdown>
     </div>
   );
 };

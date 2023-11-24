@@ -20,6 +20,34 @@ export default function Home() {
         <HeaderDropdown.Divider />
         <HeaderDropdown.Item icon={<AiFillBell />}>Item 3</HeaderDropdown.Item>
       </HeaderDropdown>
+      <HeaderDropdown label="Dropdown" size="md">
+        <HeaderDropdown.Header>
+          <span className="block text-sm">Bonnie Green</span>
+          <span className="block truncate text-sm font-medium">
+            bonnie@flowbite.com
+          </span>
+        </HeaderDropdown.Header>
+        <HeaderDropdown.Item disabled>Item 1</HeaderDropdown.Item>
+        <HeaderDropdown.Item onClick={() => alert("Item 2 Clicked")}>
+          Item 2
+        </HeaderDropdown.Item>
+        <HeaderDropdown.Divider />
+        <HeaderDropdown.Item icon={<AiFillBell />}>Item 3</HeaderDropdown.Item>
+      </HeaderDropdown>
+      <HeaderDropdown label="Dropdown" size="sm">
+        <HeaderDropdown.Header>
+          <span className="block text-sm">Bonnie Green</span>
+          <span className="block truncate text-sm font-medium">
+            bonnie@flowbite.com
+          </span>
+        </HeaderDropdown.Header>
+        <HeaderDropdown.Item disabled>Item 1</HeaderDropdown.Item>
+        <HeaderDropdown.Item onClick={() => alert("Item 2 Clicked")}>
+          Item 2
+        </HeaderDropdown.Item>
+        <HeaderDropdown.Divider />
+        <HeaderDropdown.Item icon={<AiFillBell />}>Item 3</HeaderDropdown.Item>
+      </HeaderDropdown>
       <HeaderDropdown label="Dropdown" placement="top" mode="plain">
         <HeaderDropdown.Header>
           <span className="block text-sm">Bonnie Green</span>
