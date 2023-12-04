@@ -115,19 +115,18 @@ export const Plain: Story = {
   },
 };
 
-//Large size not working : Issue pending
-// export const Size: Story = {
-//   args: {
-//     label: "Large",
-//     size: "lg",
-//     children: <DummyComponent />,
-//   },
-// };
-
 export const WithChildren: Story = {
   args: {
     label: "Click Me",
 
+    children: <DummyComponent />,
+  },
+};
+
+export const Size: Story = {
+  args: {
+    label: "Large",
+    size: "lg",
     children: <DummyComponent />,
   },
 };
